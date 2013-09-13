@@ -1,0 +1,145 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+  		<meta charset="utf-8">
+    	<title>Sport steps</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/style.css">
+		<script src="js/internal.js"></script>
+		<script src="js/index.js"></script>
+    </head>
+
+    <body>
+		<div class="container">
+ 			<div class="row-fluid">
+	   			<div class="span12">
+					<h1>Sport steps</h1>
+	   			</div>
+	 		</div>	
+
+			<div class="row-fluid">
+	  			<div class="span9">
+	  				<h3>Sport steps сайт для начинающих спортсменов</h3>
+	    			<h4> Все хотят быть красивыми и привлекательными, но для этого надо поддерживать свое тело в форме, а лень и отговорки препятствуют этому.
+ 						  Как побороть самого себя и все же начать заниматься спортом? Спорт делает нас сильнее как физически, так и духовно, он помогает нам избавиться 
+						 от лишнего веса, стать лучше, а также дарит энергичность и адреналин. Все успешные люди занимаются тем или иным видом спортом, это часть их успешной
+ 						 жизни. Так что же вам мешает следовать их примеру и совершенствовать свое тело и свою жизнь?
+	  			 	</h4>
+
+	    			<table id="main_table">
+	    			<caption>Форма приведёная ниже поможет вам зделать первые шаги в мире спорта.</caption>
+	      			<tr>
+	        			<th>Введите имя</th>
+	        			<td><input type="text" id="name" placeholder="Имя..."></td>
+	      			</tr>
+	      			<tr>
+	        			<th>Пол</th>
+	         			<td>
+		     			<table>
+		         		<tr>
+			   				<th><input type="radio" id="man" name="floor" checked="checked"></th>
+			   				<td>Мужской</td>
+			 			</tr>
+			 			<tr>
+			   				<th><input type="radio" id="woman" name="floor"></th>
+			   				<td>Женский</td>
+			 			</tr>
+		     			</table>
+		 				</td>
+	        		</tr>
+	        		<tr>
+	          			<th>Введите ваш рост</th>
+		  				<td><input type="text" id="growth" placeholder="Рост..."></td>
+	        		</tr>
+	        		<tr>
+		  				<th>Введите ваш вес</th>
+		  				<td><input type="text" id="weight" placeholder="Вес..."></td>
+	        		</tr>
+                	<tr>
+		  				<th>Какое количество раз вы <br>подтягиваетесь на турнике?</th>
+		  				<td><input type="text" id="horizontal_bar" placeholder="Подтягования..."></td>
+	        		</tr>
+	        		<tr>
+		  				<th>Какое количество раз вы <br>подтягиваетесь на брусьях?</th>
+		  				<td><input type="text" id="bars" placeholder="Отжимания на брусьях..."></td>
+	        		</tr>
+	        		<tr>
+		  				<th>Сколько раз вы<br> отжимаетесь от пола?</th>
+		  				<td><input type="text" id="push-ups" placeholder="Отжимания..."></td>
+	        		</tr>
+	        		<tr>
+		  				<th>За какое время вы пробегаете <br>дистанцию 200 метров?</th>
+		  				<td>
+		    				<select id="running">
+	    	    				<option> 20.75 секунд </option>
+		    					<option> 21.34 секунд </option>
+		    					<option> 22.24 секунд </option>
+		    					<option> 23.24 секунд </option>
+		    					<option> 24.44 секунд </option>
+		    					<option> 25.84 секунд </option>
+		    					<option selected="selected"> Больше 26 секунд </option>
+	            			</select>
+		  				</td>
+	        		</tr>
+  	        		<tr>
+		  				<th></th>
+		  				<td><input type="button" id="save" class="btn btn-success" value="Обработать"></td>
+	        		</tr>
+	    			</table>
+
+	    			<div id="result"></div>
+	  			</div>
+
+	  			<div class="span3">
+	  				<h4>Опрос</h4>
+				   	<p id="statistical_expl">Для того чтобы понять в чем больше нуждаються
+						посетители нашего сайта мы
+				        составляем опросы по результатам которых будет составляться направление 
+				        развития сайта. Отвечая на опросы такого рода вы помагаете развиваться
+						сайту, поэтому ваше мнение очень ценно для нас!
+				    </p>
+				    <p id="statistical_question"><h4>Каким видом спорта вы наиболее увлекаетесь?</h4></p>
+				    <table class="table table-hover">
+				        <tr>
+					    <th><input type="radio" id="workout" name="kind_of_sport"></th>
+					    <td>Workout</td>
+					</tr>
+					<tr>
+					    <th><input type="radio" id="bodybuilding" name="kind_of_sport"></th>
+					    <td>Бодибилдинг</td>
+					</tr>
+					<tr>
+					    <th><input type="radio" id="light_atletic" name="kind_of_sport"></th>
+					    <td>Легкая атлетика</td>
+					</tr>
+					<tr>
+					    <th><input type="radio" id="weightlifting" name="kind_of_sport"></th>
+					    <td>Тяжелая атлетика</td>
+					</tr>
+					<tr>
+					    <th><input type="radio" id="course" name="kind_of_sport"></th>
+					    <td>Паркур</td>
+					</tr>
+					<tr>
+					    <th><input type="radio" id="cycle_racing" name="kind_of_sport"></th>
+					    <td>Велоспорт</td>
+					</tr>
+					<tr>
+					    <th><input type="radio" id="swimming" name="kind_of_sport"></th>
+					    <td>Плавание</td>
+					</tr>
+					<tr>
+					    <th><input type="radio" id="no_kind_of_sport" name="kind_of_sport"></th>
+					    <td>Здесь нет такого вида спорта</td>
+					</tr>
+				    </table>
+				    <p><input type="button" class="btn btn-info" value="Подтвердить" id="confirm-button"></p>
+			    </div>
+		</div>
+		<div class="row-fluid">
+	   			<div class="span12">
+					<h6>&copy 2013 Sport-steps<br>Разработчики<br><a href="http://vk.com/zero04">Андрей Перетятько</a><br><a href="http://vk.com/crysnic">Владимир Удалых</a></h6>
+	   			</div>
+	 	</div>
+    </div>
+</html>
