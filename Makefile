@@ -1,7 +1,7 @@
 PROJECT = stp
 
 ERL = erl
-REBAR = rebar
+REBAR = ./rebar
 LIBS = ERL_LIBS=apps:deps
 DIALYZER = dialyzer
 
