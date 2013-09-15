@@ -1,0 +1,6 @@
+{application, stp, [
+    {description, "Simple web server for Sport Steps"},
+    {vsn, "0.0.1"},
+    {application, [kernel, stdlib]},
+    {mod, {stp_app, []}}
+]}.

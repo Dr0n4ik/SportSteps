@@ -35,9 +35,15 @@ input[type=checkbox]:checked  + #result{
 	background-color: red;
 }
 
-.span12 h6 {
+.span12 p {
 	text-align: center;
 	font-style: italic;
+    margin-top: 10px;
+}
+
+.author:hover {
+    color: yellow;
+    text-decoration: none;
 }
 
 .span3 {
@@ -50,18 +56,10 @@ input[type=checkbox]:checked  + #result{
 
 .span9 h4 {
 	text-align: justify;
-	font-weight: lighter;
-	color: black;
 	line-height: 27px;
 }
 
-h3 {
-	font-style: italic;
-	text-decoration: underline;
-}
-
 caption {
-	font-style: italic;
-	font-size: 1.5em;
 	padding: 10px;
+    font-size: 1.6em;
 }
