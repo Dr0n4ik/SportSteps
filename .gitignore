@@ -4,3 +4,4 @@ deps
 log
 rel/stp
 stp.plt
+apps/stp/.eunit
